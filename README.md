@@ -67,3 +67,51 @@ In a random forest we don’t have to segregate the data for train and test as t
 ##### 5.  Stability- 
 
 Stability arises because the result is based on majority voting / averaging.
+
+### Benefits and challenges of random forest
+
+There are a number of key advantages and challenges that the random forest algorithm presents when used for classification or regression problems. Some of them include:
+
+### Key Benefits
+
+##### Reduced risk of overfitting:
+
+Decision trees run the risk of overfitting as they tend to tightly fit all the samples within training data. However, when there’s a robust number of decision trees in a random forest, the classifier won’t overfit the model since the averaging of uncorrelated trees lowers the overall variance and prediction error.
+
+##### Provides flexibility: 
+
+Since random forest can handle both regression and classification tasks with a high degree of accuracy, it is a popular method among data scientists. Feature bagging also makes the random forest classifier an effective tool for estimating missing values as it maintains accuracy when a portion of the data is missing.
+
+##### Easy to determine feature importance:
+
+Random forest makes it easy to evaluate variable importance, or contribution, to the model. There are a few ways to evaluate feature importance. Gini importance and mean decrease in impurity (MDI) are usually used to measure how much the model’s accuracy decreases when a given variable is excluded. However, permutation importance, also known as mean decrease accuracy (MDA), is another importance measure. MDA identifies the average decrease in accuracy by randomly permutating the feature values in oob samples.
+
+### Key Challenges
+
+##### Time-consuming process: 
+
+Since random forest algorithms can handle large data sets, they can be provide more accurate predictions, but can be slow to process data as they are computing data for each individual decision tree.
+
+##### Requires more resources: 
+
+Since random forests process larger data sets, they’ll require more resources to store that data.
+
+##### More complex: 
+
+The prediction of a single decision tree is easier to interpret when compared to a forest of them.
+
+### Random forest applications
+
+The random forest algorithm has been applied across a number of industries, allowing them to make better business decisions. Some use cases include:
+
+##### Finance: 
+
+It is a preferred algorithm over others as it reduces time spent on data management and pre-processing tasks. It can be used to evaluate customers with high credit risk, to detect fraud, and option pricing problems.
+
+##### Healthcare: 
+
+The random forest algorithm has applications within computational biology (link resides outside IBM) (PDF, 737 KB), allowing doctors to tackle problems such as gene expression classification, biomarker discovery, and sequence annotation. As a result, doctors can make estimates around drug responses to specific medications.
+
+##### E-commerce: 
+
+It can be used for recommendation engines for cross-sell purposes.
